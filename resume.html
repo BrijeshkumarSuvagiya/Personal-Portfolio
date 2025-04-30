@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <style>
+      /* Basic styling for particles background */
+      #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      /* Optional: Make text stand out more */
+      .hero,
+      header,
+      footer {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="particles-js"></div>
+    <header>
+      <div class="logo">
+        <div class="logo-circle"></div>
+        <h2>Brijeshkumar Suvagiya</h2>
+        <span>Software Developer</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html" class="active">Resume</a></li>
+          <li><a href="experience.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content-section">
+        <div class="resume-header">
+          <h1>Resume</h1>
+          <a
+            href="/Brijeshkumar Suvagiya Resume.pdf"
+            target="_blank"
+            class="download-btn"
+          >
+            ⬇️ Download Resume
+          </a>
+        </div>
+
+        <div class="resume-section">
+          <h2>Experience</h2>
+
+          <div class="resume-item">
+            <h3>Software Developer</h3>
+            <p class="company">
+              Bright Mind Enrichment and Schooling - CA, USA
+            </p>
+            <p class="date">Jan 2025 - Present</p>
+            <ul>
+              <li>
+                Built interactive web applications using React.js, TypeScript,
+                and modern UI libraries like MUI and Tailwind CSS, enhancing
+                user experience and performance. Developed reusable and modular
+                components, optimizing front-end code structure, and improving
+                maintainability.
+              </li>
+              <li>
+                Implemented API integration using RESTful APIs and GraphQL,
+                ensuring efficient data fetching and smooth client server
+                communication.
+              </li>
+              <li>
+                Implemented reusable UI components with React Hooks (useState,
+                useEffect), and state management techniques to build modular and
+                maintainable applications.
+              </li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <h3>Senior Software Developer</h3>
+            <p class="company">
+              OFNIINFO Software Solution - Surat, Gujarat, India
+            </p>
+            <p class="date">July 2021 - Dec 2022</p>
+            <ul>
+              <li>
+                Developedand optimized mobile applications using ReactNative and
+                React Redux, ensuring seamless user experiences while improving
+                app performance, reducing API response times by 30%, and
+                increasing active users by 15%.
+              </li>
+              <li>
+                Integrated secure APIs and enhanced server-side functionality
+                with NodeJS and scalability.
+              </li>
+              <li>
+                Collaboratedwith cross-functional teamsto rebuild UI components,
+                implement Jest testing forreliability, and boost app loading
+                times by 25%, contributing to a 20% increase in user retention.
+              </li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <h3>Software Developer</h3>
+            <p class="company">Rejoicehub Solution - Surat, Gujarat, India</p>
+            <p class="date">July 2020 - Jun 2021</p>
+            <ul>
+              <li>
+                Engineered and deployed dynamic, responsive web applications
+                using ReactJS, crafting reusable UI components and
+                implementingRESTful API integrationsto optimize user experiences
+                and streamline workflows.
+              </li>
+              <li>
+                Built a single-page responsive website from scratch using HTML,
+                CSS, JavaScript, and Bootstrap, showcasing proficiency in core
+                frontend technologies and modern responsive design principles.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <h2>Education</h2>
+
+          <div class="resume-item">
+            <h3>Master of Science in Computer Science</h3>
+            <p class="company">New Jersey Institute of Technology</p>
+            <p class="date">2023 - 2024</p>
+          </div>
+
+          <div class="resume-item">
+            <h3>Bachelor of Science in Computer Engineering</h3>
+            <p class="company">Gujarat TechnologicalUniversity of Technology</p>
+            <p class="date">2017 - 2021</p>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <h2>Skills</h2>
+
+          <div class="skills-container">
+            <div class="skill-item">HTML5</div>
+            <div class="skill-item">CSS3</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">Responsive Design</div>
+            <div class="skill-item">UI/UX</div>
+            <div class="skill-item">Git</div>
+            <div class="skill-item">React Native</div>
+            <div class="skill-item">front-end developer</div>
+            <div class="skill-item">React JS</div>
+            <div class="skill-item">Angular</div>
+            <div class="skill-item">Tailwind CSS</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Brijeshkumar Suvagiya. All rights reserved.</p>
+    </footer>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 80,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#000000",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+          },
+          size: {
+            value: 3,
+            random: true,
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#999999",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            out_mode: "out",
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            repulse: {
+              distance: 120,
+              duration: 0.6,
+            },
+            push: {
+              particles_nb: 4,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
+</html>

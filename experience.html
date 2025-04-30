@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Add particles.js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <style>
+      #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      .hero,
+      header,
+      footer {
+        position: relative;
+        z-index: 1;
+      }
+
+      .lightbox {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .lightbox img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+
+      .lightbox .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 40px;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .lightbox .prev,
+      .lightbox .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 40px;
+        color: #fff;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      .lightbox .prev {
+        left: 20px;
+      }
+
+      .lightbox .next {
+        right: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="particles-js"></div>
+
+    <header>
+      <div class="logo">
+        <div class="logo-circle"></div>
+        <h2>Brijeshkumar Suvagiya</h2>
+        <span>Software Developer</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="experience.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content-section">
+        <h1>Projects</h1>
+
+        <div class="projects-grid">
+          <div class="project-card" onclick="showImage('doctorApp')">
+            <div class="project-image project-1"></div>
+            <h3>Doctor Consulting App</h3>
+            <p>
+              Build Doctor Consulting App with login and appointment for Doctor
+              to patient over video call.
+            </p>
+            <div class="project-tags">
+              <span>React Native</span>
+              <span>JavaScript</span>
+              <span>VideoSDK</span>
+            </div>
+          </div>
+
+          <div class="project-card" onclick="showImage('icoder')">
+            <div class="project-image project-2"></div>
+            <h3>Icoder Bootstrap</h3>
+            <p>Simple interface Design Website with Bootstrap.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Bootstrap</span>
+              <span>Git</span>
+            </div>
+          </div>
+
+          <div class="project-card" onclick="showImage('trinkerr')">
+            <div class="project-image project-3"></div>
+            <h3>Trinkerr</h3>
+            <p>Social Trading App for Android and iOS.</p>
+            <div class="project-tags">
+              <span>Ajax</span>
+              <span>CSS</span>
+              <span>React Native</span>
+              <span>Redux</span>
+              <span>API integration</span>
+              <span>NPM</span>
+            </div>
+          </div>
+
+          <div class="project-card" onclick="showImage('forpay')">
+            <div class="project-image project-4"></div>
+            <h3>For Pay - Go Digital</h3>
+            <p>
+              Focused on flight booking in domestic Indian region.
+            </p>
+            <div class="project-tags">
+              <span>Ajax</span>
+              <span>CSS</span>
+              <span>TypeScript</span>
+              <span>API</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Brijeshkumar Suvagiya. All rights reserved.</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close" onclick="closeLightbox()">×</span>
+      <img id="lightbox-img" src="" />
+      <button class="prev" onclick="changeImage(-1)">❮</button>
+      <button class="next" onclick="changeImage(1)">❯</button>
+    </div>
+
+    <script>
+      const projectImages = {
+        doctorApp: [
+          "ProjectImage/DoctorConsulting/002.png",
+          "ProjectImage/DoctorConsulting/005.png",
+          "ProjectImage/DoctorConsulting/008.png",
+          "ProjectImage/DoctorConsulting/011.png",
+          "ProjectImage/DoctorConsulting/015.png",
+          "ProjectImage/DoctorConsulting/018.png",
+          "ProjectImage/DoctorConsulting/019.png",
+          "ProjectImage/DoctorConsulting/020.png",
+          "ProjectImage/DoctorConsulting/026.png",
+        ],
+        icoder: [
+          "ProjectImage/IcoderBootstrape/Screenshot 2025-04-11 201839.png",
+          "ProjectImage/IcoderBootstrape/Screenshot 2025-04-11 201904.png",
+          "ProjectImage/IcoderBootstrape/Screenshot 2025-04-11 201938.png",
+          "ProjectImage/IcoderBootstrape/Screenshot 2025-04-11 202006.png",
+        ],
+        trinkerr: [
+          "ProjectImage/Trinkerr/WhatsApp Image 2025-04-11 at 13.18.09_eb8be6f7.jpg",
+          "ProjectImage/Trinkerr/723326-f6a434aca62b6ec2370ddcd12f9191b6a7f50ca3.jpg",
+          "ProjectImage/Trinkerr/Screenshot 2025-04-11 162837.png",
+          "ProjectImage/Trinkerr/Screenshot 2025-04-11 162928.png",
+          "ProjectImage/Trinkerr/Screenshot 2025-04-11 163334.png",
+        ],
+        forpay: [
+          "ProjectImage/Forpay/unnamed.webp",
+          "ProjectImage/Forpay/unnamed (1).webp",
+          "ProjectImage/Forpay/unnamed (2).webp",
+          "ProjectImage/Forpay/unnamed (3).webp",
+          "ProjectImage/Forpay/unnamed (4).webp",
+          "ProjectImage/Forpay/unnamed (6).webp",
+        ],
+      };
+
+      let currentImages = [];
+      let currentIndex = 0;
+
+      function showImage(projectKey, index = 0) {
+        currentImages = projectImages[projectKey];
+        currentIndex = index;
+        document.getElementById("lightbox-img").src =
+          currentImages[currentIndex];
+        document.getElementById("lightbox").style.display = "flex";
+      }
+
+      function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+      }
+
+      function changeImage(step) {
+        currentIndex =
+          (currentIndex + step + currentImages.length) % currentImages.length;
+        document.getElementById("lightbox-img").src =
+          currentImages[currentIndex];
+      }
+
+      // Initialize particles
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 80,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#000000",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+          },
+          size: {
+            value: 3,
+            random: true,
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#999999",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            out_mode: "out",
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            repulse: {
+              distance: 120,
+              duration: 0.6,
+            },
+            push: {
+              particles_nb: 4,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
+</html>
