@@ -107,7 +107,7 @@ main {
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    background-image: url('/Brijesh_Suvagiya_profile_1.jpeg');
+    background-image: url('Brijesh_Suvagiya_profile_1.jpeg');
     background-size: cover;
     background-position: center;
     border: 10px solid #f0f0f0;
@@ -313,7 +313,7 @@ main {
 }
 
 .project-1 {
-    background-image: url('/ProjectImage/DoctorConsulting/005.png');
+    background-image: url('ProjectImage/DoctorConsulting/005.png');
 }
 
 .project-2 {
@@ -325,7 +325,7 @@ main {
 }
 
 .project-4 {
-    background-image: url("/ProjectImage/Forpay/unnamed.webp");
+    background-image: url("ProjectImage/Forpay/unnamed.webp");
 }
 
 .project-card h3 {
